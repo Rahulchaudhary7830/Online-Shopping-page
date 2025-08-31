@@ -1,14 +1,15 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+body {
     height: 100%;
     width: 100%;
     font-weight: bold;
     font-family: inter_regular, fallback-inter_regular, Arial, sans-serif;
     overflow-x: hidden;
+    background-color: #fff;
 }
 
 .header {
@@ -26,8 +27,6 @@ body{
     flex-wrap: wrap;   
     gap: 1rem;
 }
-
-
 .text {
     height: 35px;
     width: 100%;
@@ -36,6 +35,7 @@ body{
     border-radius: 10px;
     font-size: 1.1rem;
     box-shadow: 0 2px 4px #777;
+    padding: 5px 10px;
 }
 .nav-links {
     color: black;
@@ -48,35 +48,37 @@ body{
     text-decoration: underline;
     color: blue;
 }
-
 .login {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
 }
-
-
-
-.nav-image{
-    height:30px;
-    border-radius:50%;
+#wishlist-icon {
+    font-size: 1.2rem;
+    color: red;
+    cursor: pointer;
+}
+.nav-image {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
-.container-box{
+.container-box {
     display: flex;
-    flex-direction:column
+    flex-direction: column;
 }
 .container {
     background-color: #f2f2f2;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
 }
-
 .card {
     background-color: #ffffff;
     text-align: center;
@@ -86,89 +88,86 @@ body{
     max-width: 100%;     
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
-
 .card-image {
     max-width: 100%;
     height: auto;
     border-radius: 15px;
-    transition: all linear 0.6s;
+    transition: transform 0.6s linear;
     cursor: pointer;
 }
-
-.image{
+.image {
     background-color: rgba(128, 128, 128, 0.434);
     border-radius: 15px;
-    transition: all linear 0.6s 0s;
+    transition: transform 0.6s linear;
     cursor: pointer;
 }
-.image:hover{
+.image:hover {
      transform: scale(1.075);
 }
-.card-title{
-    font-size: 1.5rem;
+.card-title {
+    font-size: 1.3rem;
     font-weight: 600;
     text-align: left;
-    margin-top:1rem;
-    margin-bottom:0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
-.card-desc{
+.card-desc {
     text-align: left;
     margin-bottom: 0.5rem;
 }
-.cost{
+.cost {
     display: flex;
     gap: 1rem;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
-    margin-top:5px;
-    margin-bottom:0.5rem;
+    margin: 5px 0;
 }
-.price{
-    font-size: 1.5rem;
-    color:#231cef;
+.price {
+    font-size: 1.4rem;
+    color: #231cef;
 }
-.discount{
-    font-size:1.1rem;
+.discount {
+    font-size: 1rem;
     color: red;
 }
-.button{
+.button {
     display: flex;
     flex-direction: column;
-    gap:0.5rem;
+    gap: 0.5rem;
     margin-top: 0.5rem;
     justify-content: center;
     align-items: center;
-    transition: all linear 0.6s 0s;
-    
 }
-.card-button{
-    font-size:16px;
-    background-color:#231cef;
-    border-radius:5px;
+.card-button {
+    font-size: 16px;
+    background-color: #231cef;
+    border-radius: 5px;
     text-align: center;
-    padding:10px 15px;
+    padding: 10px 15px;
     width: 80%;
     border: none;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
-.card-button:hover{
-    background-color:red;
-    transform: scale(1.1);
+.card-button:hover {
+    background-color: red;
+    transform: scale(1.05);
 }
-.button-link{
-    color:white;
+.button-link {
+    color: white;
     text-decoration: none;
 }
-#buy{
+#buy {
     background-color: yellow;
     color: black;
 }
-#buy:hover{
-    background-color:red;
+#buy:hover {
+    background-color: red;
 }
-#buy a{
+#buy a {
     color: black;
 }
+
 .footer {
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29); 
     color: white;
@@ -201,11 +200,9 @@ body{
     flex-direction: column; 
     gap: 0.8rem;
   }
-
   .text {
     width: 90%;  
   }
-
   .nav-links {
     display: block;
     margin: 0.3rem 0;
@@ -216,7 +213,6 @@ body{
   .card {
     width: 100%;
   }
-
   .footer {
     font-size: 0.9rem;
     padding: 15px;
